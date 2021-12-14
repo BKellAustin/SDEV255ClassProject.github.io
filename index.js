@@ -6,12 +6,9 @@
         <meta name="viewport” content="width=device-width, initial-scale=1.0″>
         <title>IVY TECH Schedule Builder</title>
         <script src="modernizr.custom.05819.js"></script>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Ropa+Sans:ital@0;1&display=swap" rel="stylesheet">
         <!-- Load external CSS styles -->
         <link type= "text/css" rel="stylesheet" link href="style.css">
-      <script src= "script.js"></script> 
+      <script src= "index.js"></script> 
         
 
     </head>
@@ -20,13 +17,13 @@
             
 
 <main id="main-holder">
-    <h1>IVY TECH Schedule Builder Login</h1>
-   <img src="ivy-tech-logo.png" class="logo" alt="IvyTechLogo" >	
+    <h1 id="login-header">IVY TECH Schedule Builder Login</h1>
+    <a href="ivy-tech-logo.png"><img src="ivy-tech-logo.png" height="200" width="350" alt="IvyTechLogo" ></a>	
     <div id="login-error-msg-holder">
       <p id="login-error-msg">Invalid Username <span id="error-msg-second-line">and/or password</span></p>
     </div>
     
-    <form id="login-form" class=login>
+    <form id="login-form">
       <label for ="usname"><b>Username:</b></label> 
             <input type="text" placeholder="Enter Username" name="username" required>
 
@@ -34,10 +31,10 @@
             <input type="password" placeholder="Enter Password" name="password" required>
 
 
-            <button type="login" id="login">Login</button> 
-            <div>
+            <button type="submit">Login</button> 
+            <label>
             <input type="checkbox" checked="checked"> Remember me 
-            </div>
+            </label>
             
              <button type="button" class="passwordBtn"> Forgot Password</button>  </a> 
             <a href="home.html"> Skip </a>

@@ -1,34 +1,33 @@
-html {
-    height: 100%;
-  }
+
   
+  h1{ 
+    color: #000000; text-align: center;
+    line-height: 200%;
+     font-family: 'Ropa Sans', sans-serif;
+     font-size: 250%;
+  }
   body {
-    height: 100%;
-    margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    display: grid;
-    justify-items: center;
-    align-items: center;
     background-color: #339966;
+    font-family: 'Ropa Sans', sans-serif;
+    font-size: 100%;
   }
   
   #main-holder {
-    width: 50%;
-    height: 90%;
-    display: grid;
-    justify-items: center;
-    align-items: center;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
     background-color: white;
     border-radius: 7px;
     box-shadow: 0px 0px 5px 2px white;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding: 0.5rem;
   }
   
   #login-error-msg-holder {
     width: 100%;
     height: 100%;
-    display: grid;
-    justify-items: center;
-    align-items: center;
   }
   
   #login-error-msg {
@@ -49,34 +48,57 @@ html {
   }
   
   #login-form {
-    align-self: flex-start;
-    display: grid;
-    justify-items: center;
-    align-items: center;
+    text-align: center;
+ 
   }
   
-  .login-form-field::placeholder {
+  .login::placeholder {
     color: white;
   }
   
-  .login-form-field {
-    border: none;
-    border-bottom: 1px solid #3a3a3a;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    outline: none;
-    padding: 0px 0px 5px 5px;
-  }
+#login {
+margin: 1rem 1rem 1rem 1rem;
+text-align: center;
+display: block;
+margin: 1rem auto;
+}
   
-  #login-form-submit {
-    width: 200%;
-    padding: 10px;
-    border: none;
-    border-radius: 10px;
-    color: white;
-    font-weight: bold;
-    background-color: #3a3a3a;
-    cursor: pointer;
-    outline: none;
+
+
+.passwordBtn {
+  display: block;
+  margin: 1rem auto;
+}
+
+  label{
+    display: block;
+    background-color:#d3e7e1;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    font-size: 1.5em;
+    padding:0.5rem ;
   }
-  
+
+  input{
+    width: 20%;
+    display: block;
+    margin: 0 auto;
+
+  }
+  .logo {
+    width:10%;
+  margin: 0 auto;
+  display: block;
+    
+    
+
+  } /*bigger*/
+  @media (min-width: 400px){
+    .logo {
+      width:25%;
+    }
+   }

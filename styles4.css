@@ -16,8 +16,6 @@
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
-  display: flex;
-  overflow: auto;
 }
 
 /* Change the color of links on hover */
@@ -33,17 +31,20 @@
 }
 body { background-color: #fcfdfc;
     color:#000000;
-    font-family: Verdana;
+    font-family: 'Ropa Sans', sans-serif;
+    font-size: 120% ;
+    background: #fcfdfc; 
     }
 
 
   nav {text-align: right;font-weight: bold;}    
 
-h1       { background-color: #237753; 
-color: #000000; text-align: center;
-line-height: 200%;
- font-family: Verdana;
-}
+h1    { background-color: #237753; 
+    color: #000000; text-align: center;
+    line-height: 200%;
+    font-family: 'Ropa Sans', sans-serif;
+    font-size: 200% ;
+    }
 
 h2{
 text-align: center;
@@ -51,8 +52,8 @@ text-align: center;
     padding-right: 2em;
     color: #283836;
     font-weight: bold;
-    font-family: Verdana, Arial, sans-serif;
-    font-size: 30px;
+    font-family: 'Ropa Sans', sans-serif;
+   
 }
 
 
@@ -74,11 +75,10 @@ padding-right: 2em;
 padding-bottom: .25em;
 }
 
- body {  
+ 
 
-  background: #fcfdfc; 
+ 
 
-}
 
 /* Add padding to containers */
 .container {
@@ -109,52 +109,53 @@ margin-bottom: 1em;}
 #herojobs     {display: none;}    
 
 
-
-
 * {
-    margin: 0;
+
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
     transition: 0.3s;
 }
 
+
+
 body {
-    font-family: "Verdana";
+    font-family: 'Ropa Sans', sans-serif;
     background-color: #fdfdfd;
     color: #fdfdfd;
+    font-size: 125%;
 }
 
 .card {
-    max-width: 400px;
+    max-width: 700px;
     
     margin: 150px auto 0;
     background-color: #42515a;
     box-shadow: 0 10px 90px #00000024;
     text-align: center;
-    font-size: 15px;
     border-radius: 15px;
 }
 
 .card .card-header {
     position: relative;
-    height: 58px;
+    height: 60px;
 }
 
 .card .card-header .profile-img {
-    width: 130px;
-    height: 130px;
+    width: 150px;
+    height: 150px;
     border-radius: 1000px;
     position: absolute;
     left: 50%;
+    transition: 1s ease all;
     transform: translate(-50%, -50%);
     border: 8px solid #0c3f19;
     box-shadow: 0 0 20px #00000033;
 }
 
 .card .card-header .profile-img:hover {
-    width: 180px;
-    height: 180px;
+    width: 200px;
+    height: 200px;
     border: 8px solid #19501e;
 }
 
@@ -164,30 +165,26 @@ body {
 
 .card .card-body .name {
     margin-top: 30px;
-    font-size: 22px;
     font-weight: bold;
     color: #0b492c;
+    font-size: 175%;
 }
 
 .card .card-body .name:hover {
     margin-top: 20px;
-    font-size: 24px;
     color: #47886a;
 }
 
 .card .card-body .mail {
-    font-size: 10px;
     color: #c2bdbd;
 }
 
 .card .card-body .mail:hover {
-    font-size: 10px;
     color: #ffffff;
 }
 
 .card .card-body .job {
     margin-top: 10px;
-    font-size: 14px;
 }
 
 .card .card-footer {
@@ -198,7 +195,7 @@ body {
 }
 
 .card .card-footer .count {
-    font-size: 14px;
+
 }
 
 
@@ -216,6 +213,22 @@ border-spacing: 0px;
 
 footer   { background-color: #28632d; 
 color: #221811;
-font-size: .60em;
 font-style: italic;
-text-align: right;    }    
+text-align: right;    }  
+
+a {
+    color: #28632d;
+}
+
+.logo {
+    width:10%;
+    margin: 0 auto;
+    display: block;
+   text-align: center;
+  }
+   /*bigger*/
+   @media (min-width: 300px){
+     .logo {
+       width: 25%;
+     }
+    }
